@@ -1,0 +1,357 @@
+* {
+  box-sizing: border-box;
+}
+/* this will make sure the html window will become 100% wide */
+html, body {
+  width: 100%;
+  font-family: 'Open sans',sans-serif;
+}
+
+/* this will make sure every element using the same font */
+/* text-decoration: none means it's remove effect like underline for the text */
+h1, h2, h3, a, button, p, div, span {
+  text-decoration: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  align-items: center;
+  background-color:white;
+  display: flex; /* this will make the .navbar child become flex layout*/
+  justify-content: space-between;
+  padding: 25px; /* Add padding: 25px for each side*/
+}
+
+.navbar .topnav a {
+  color: #4F4949;
+  margin-left: 40px;
+  font-size: 1em; /*(hmm, too big? don't want it too small?)*/
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+.nav-logo {
+  width: 70px;
+}
+
+.wrap {
+  padding: 100px 15%;
+}
+
+.intro-container {
+  display: flex;
+}
+
+.intro-container .img-self {
+  width: 50%;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.intro-container .intro-text {
+  width: 50%;
+  background-color: rgb(21, 21, 22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8%;
+  color: white;
+  font-size: 21px;
+  line-height: 44px;
+  font-family: 'Lato', sans-serif;
+}
+
+.intro-container .intro-text span {
+  font-weight: bolder;
+  color:#E99900;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.biography h2 {
+  color: #4F4949;
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
+font-family: 'Lato', sans-serif;
+}
+
+.intro {
+  line-height: 1.6em;
+}
+
+.intro h1 {
+  color: #4F4949;
+  font-size: 45px;
+  font-weight: bolder;
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+}
+
+.intro p {
+  line-height: 1.5em;
+  color: #4F4949;
+  padding-top: 60px;
+  font-size: 18px;
+}
+
+
+.bio {
+font-family: 'Lato', sans-serif;
+  line-height: 1.5em;
+  text-align: left;
+  width: 100%;
+  max-width: 700px;
+  padding:0 15px;
+  margin: auto;
+}
+
+.bio h1{
+  color: #4F4949;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: left;
+  margin: 70px 0 30px 0;
+  font-family: 'Fairplay Display', serif;
+  line-height: 40px;
+}
+
+.highlight {
+  color:#E99900;
+  font-weight: bold;
+}
+
+
+.img {
+border: 1px solid #ddd;
+ border-radius: 4px;
+ padding: 5px;
+ width: 150px;
+ bottom: 50px;
+}
+
+.container img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.biography p {
+  margin-bottom: 26px;
+  line-height: 1.7em;
+color: #4F4949;
+}
+
+
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px;
+}
+
+.photo-slideshow {
+  width: 500px;
+  height: 500px;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+padding:0 80px;
+margin: auto;
+}
+
+.connect a {
+  color: #4F4949;
+  font-weight: bold;
+}
+
+
+footer {
+  padding: 25px;
+  border-top: 1px solid rgb(213, 213, 213);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  white;
+}
+
+footer h1 {
+  color: #4F4949;
+  margin-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+footer p {
+  color: #4F4949;
+  font-size: 13px;
+  font-family: 'Lato', sans-serif;
+}
+
+footer .social {
+  text-align: center;
+}
+
+footer .social a {
+  display: inline-block;
+  color: #4F4949;
+  font-size: 13px;
+  padding: 0 15px;
+  font-family: 'Lato', sans-serif;
+}
+
+footer .social a:first-child {
+  padding-left: 0;
+}
+
+.hamburger-btn {
+  width: 40px;
+  height: 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hamburger-btn .line {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  margin: 3px 0;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+/*hide on desktop show on mobile*/
+.mobile-only {
+  display: none !important;
+}
+
+/*mobile phone width resolution is less than 1024px.*/
+@media screen and (max-width: 1024px) {
+  .mobile-only {
+    display: block !important;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: none;
+    height: calc(100vh - 89px);
+    background-color: white;
+  }
+
+  .nav-mobile a {
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+    color: #4F4949;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    font-weight: bold;
+  }
+
+  .hamburger-btn {
+    display: flex !important;
+    cursor: pointer;
+  }
+
+  .content-container {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+
+  .wrap {
+    padding: 20px;
+  }
+
+  .intro-container {
+    flex-direction: column;
+  }
+
+  .intro-container .img-self {
+    width: 100%;
+  }
+
+  .intro-container .intro-text {
+    width: 100%;
+  }
+
+  .photo-slideshow {
+    width: 100%;
+    height: auto;
+    padding-top: 100%;
+    position: relative;
+  }
+
+  .mySlides {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+  }
+
+  .biography {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-name {
+    margin-bottom: 20px;
+  }
+
+  footer .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .social a:first-child {
+    padding: 5px 15px;
+  }
+
+  footer .social a {
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 1024px) {
+  .photo-slideshow {
+    width: 500px;
+    height: 500px;
+    padding: 0;
+    position: relative;
+  }
+}
