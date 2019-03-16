@@ -29,9 +29,10 @@
       <a href="mailto:tasha@tashasalgado.design">CONNECT</a>
     </div>
     <div class="hamburger-btn mobile-only">
+      <!--<spam class="line"></spam>
       <spam class="line"></spam>
-      <spam class="line"></spam>
-      <spam class="line"></spam>
+      <spam class="line"></spam>-->
+	  Explore
     </div>
   </header>
   <div class="nav-mobile">
@@ -535,7 +536,7 @@ an emphasis on traditionally prepared foods during a workshop on sustainable liv
 				</div>
 			</div>
 			<div class="content_box">
-				<div class="box-text ">
+				<div class="box-text roboto">
 				<div class="box_title">Roboto</div>
 					<table class="table_content">
 						<tr>
@@ -591,7 +592,7 @@ an emphasis on traditionally prepared foods during a workshop on sustainable liv
 
     <div class="users">
       <h1 class="hooch-title">Health Hooch E-Commerce Store</h1>
-      <img src="../images/hhgifcomp.gif" alt="healthhoochvideo">
+      <img class="logo-p" src="../images/hhgifcomp.gif" alt="healthhoochvideo">
       <img class="logo-p" src="../images/hhsmart.jpg" alt="hhmockup">
       <img class="logo-p" src="../images/hhwood.jpg" alt="mockuponwood">
         <img class="logo-p" src="../images/hhsmart2.jpg" alt="hhmockup">
@@ -643,17 +644,38 @@ an emphasis on traditionally prepared foods during a workshop on sustainable liv
 </p>
   </div>
   </section>
+  
+  <section class="footer_area">
+  	<div class="footer_content">
+		<div class="return_top">
+			<a class="return_btn" href="">Return to Top</a>
+		</div>
+		<div class="push_cloud_storage">
+			<a class="" href="#">Push Cloud Storage Mobile App</a>
+		</div>
+		<div class="footer_title">Keep In Touch!</div>
+		<div class="footer_des">I hope you enjoyed my work! If you would like to chat, free to send me a note.</div>
+		<div class="invelope_icon"><a href="mailto:tasha@tashasalgado.design"><i class="fas fa-envelope"></i></a></div>
+		<div class="social">
+         <a href="https://www.linkedin.com/in/tashasalgado/" target="_blank" >LinkedIn</a>
+         <a href="https://github.com/UxMama" target="_blank">Github</a>
+         <a href="https://www.instagram.com/tasha_salgado/" target="_blank">Instagram</a>
+       </div>
+	   <div class="footer_name">&copy; 2019 Tasha Salgado | UX Designer</div>
+	</div>
+  </section>
 
-  <section class="connect">
+  <!--<section class="connect">
     <h1 class="title">Keep In Touch!</h1>
     <div class="connect-container">
       <div class="contact">
       <a href="mailto:tasha@tashasalgado.design">tasha@tashasalgado.design</a><br><br>
     </div>
-</section>
+</section>-->
+	  
 
 </script>
-<footer>
+<!--<footer>
   <div class="footer-name">
     <h1>TASHA SALGADO</h1>
     <p>UX Designer</p>
@@ -666,7 +688,7 @@ an emphasis on traditionally prepared foods during a workshop on sustainable liv
       <a href="https://www.instagram.com/tasha_salgado/" target="_blank">Instagram</a>
     </div>
   </div>
-</footer>
+</footer>-->
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132894340-1"></script>
 
@@ -676,6 +698,15 @@ an emphasis on traditionally prepared foods during a workshop on sustainable liv
   gtag('js', new Date());
 
   gtag('config', 'UA-132894340-1');
+</script>
+
+<script language="javascript">
+	$(".return_btn").click(function(e) {
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: $(".navbar").offset().top
+		}, 1500);
+	});
 </script>
 </body>
 </html>

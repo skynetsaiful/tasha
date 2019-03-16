@@ -405,7 +405,6 @@ body, h1, h2, h3, p, a, button, span, div {
 }
 .personas_content {
 	padding:30px;
-	padding-left:30%;
 	border-right:1px solid #CCCCCC;
 }
 .personas_item:last-child  .personas_content {
@@ -515,6 +514,9 @@ body, h1, h2, h3, p, a, button, span, div {
 .oswald, .oswald p, .oswald div, .oswald td {
 	font-family: Oswald;
 }
+.roboto, .roboto p, .roboto div, .roboto td {
+	font-family: roboto;
+}
 
 
 .comp-analysis {
@@ -572,7 +574,6 @@ body, h1, h2, h3, p, a, button, span, div {
 }
 .analysis_content {
 	padding:30px;
-	padding-left:30%;
 	border-right:1px solid #CCCCCC;
 }
 .analysis_item:last-child .analysis_content {
@@ -1426,6 +1427,54 @@ footer .social a:first-child {
   display: none !important;
 }
 
+.footer_area {
+	border-top:1px solid #CCCCCC;
+	padding:20px 0px;
+}
+.footer_content {
+	text-align:center;
+}
+.footer_title {
+	color:#d99333;
+	font-size:25px;
+	font-weight:bold;
+	padding:20px;
+}
+.footer_des {
+	font-size:20px;
+	color:#4f4949;
+}
+.footer_content .fa-envelope {
+	font-size:35px;
+	color:#999999;
+	padding:10px;
+}
+.footer_content .social a {
+	color:#999999;
+	padding:0px 5px;
+}
+.footer_content .footer_name {
+	padding:10px;
+	color:#999999;
+}
+.footer_content .return_top {
+	padding:40px 0px;
+}
+.footer_content .return_top a {
+	font-size:24px;
+	color:#000000;
+	font-weight:bold;
+	border-bottom:2px solid #000000;
+}
+.footer_content .push_cloud_storage {
+	padding:20px 0px;
+}
+.footer_content .push_cloud_storage a {
+	font-size:24px;
+	color:#000000;
+	font-weight:bold;
+}
+
 /*mobile phone width resolution is less than 1024px.*/
 @media screen and (max-width: 1024px) {
   .mobile-only {
@@ -1465,6 +1514,8 @@ footer .social a:first-child {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+	font-weight:bold;
+	color:#EB9A03;
   }
 
   .hamburger-btn .line {
@@ -2025,6 +2076,9 @@ footer .social a:first-child {
   footer .social a {
     padding: 5px 15px;
   }
+  
+  
+
 
   .gotopbtn {
     right: 25px;
@@ -2204,6 +2258,12 @@ footer .social a:first-child {
 }
 .content_box {
 	width:100%;
+}
+.logo-p {
+	width:100%;
+}
+.footer_area {
+	padding:0px 5px;
 }
 
 
