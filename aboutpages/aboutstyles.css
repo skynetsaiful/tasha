@@ -237,6 +237,38 @@ footer .social a:first-child {
   display: none !important;
 }
 
+.footer_area {
+	border-top:1px solid #CCCCCC;
+	padding:20px 0px;
+}
+.footer_content {
+	text-align:center;
+	height:200px;
+}
+.footer_title {
+	color:#d99333;
+	font-size:25px;
+	font-weight:bold;
+	padding:20px;
+}
+.footer_des {
+	font-size:20px;
+	color:#4f4949;
+}
+.footer_content .fa-envelope {
+	font-size:35px;
+	color:#999999;
+	padding:10px;
+}
+.footer_content .social a {
+	color:#999999;
+	padding:0px 5px;
+}
+.footer_content .footer_name {
+	padding:10px;
+	color:#999999;
+}
+
 /*mobile phone width resolution is less than 1024px.*/
 @media screen and (max-width: 1024px) {
   .mobile-only {
@@ -267,6 +299,8 @@ footer .social a:first-child {
   .hamburger-btn {
     display: flex !important;
     cursor: pointer;
+	font-weight: bold;
+	color:#EB9A03;
   }
 
   .content-container {
